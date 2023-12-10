@@ -2,16 +2,16 @@
 <configuration>
 
     <!-- 日志根目录-->
-    <springProperty scope="context" name="LOG_HOME" source="logging.path" defaultValue="logs/xsy-admin"/>
+    <springProperty scope="context" name="LOG_HOME" source="log.path" defaultValue="logs/xsy-admin"/>
 
     <!-- 日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
-    <springProperty scope="context" name="LOG_ROOT_LEVEL" source="logging.level.root" defaultValue="INFO"/>
+    <springProperty scope="context" name="LOG_ROOT_LEVEL" source="log.level.root" defaultValue="INFO"/>
 
     <!--  标识这个"STDOUT" 将会添加到这个logger -->
     <springProperty scope="context" name="STDOUT" source="log.stdout" defaultValue="STDOUT"/>
 
     <!-- 日志文件名称-->
-    <springProperty scope="context" name="LOG_PREFIX" source="logging.name" defaultValue="xsy-admin"/>
+    <springProperty scope="context" name="LOG_PREFIX" source="log.name" defaultValue="xsy-admin"/>
 
     <!-- 日志文件编码-->
     <property name="LOG_CHARSET" value="UTF-8" />
