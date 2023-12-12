@@ -1,1 +1,1 @@
-server:  port: 18080
+spring:  profiles:    active: prolog:  name: test-jenkins  path: logs/test-jenkins
